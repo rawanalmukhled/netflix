@@ -4,67 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix Clone</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
   <style>
-    *{
-        margin: 0;
-        padding: 0;
+    * {
+      margin: 0;
+      padding: 0;
     }
   </style>
   <body>
-    
-    <div style="background-image:
-    url(https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/7a3ee7f5-dc1d-4be0-8599-0770dc11098b/KW-en-20230925-popsignuptwoweeks-perspective_alpha_website_large.jpg); width: 100vw; height: 100vh;display: flex;justify-content: center; align-items: center; color: white; position: relative;"
+    <div
+      style="
+        background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/7a3ee7f5-dc1d-4be0-8599-0770dc11098b/KW-en-20230925-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: relative;
+      "
+    >
+      <div style="z-index: 8">
+        <img
+          src="https://images.ctfassets.net/y2ske730sjqp/821Wg4N9hJD8vs5FBcCGg/9eaf66123397cc61be14e40174123c40/Vector__3_.svg?w=460"
+          width="100px"
+          height="100px"
+          style="top: 0px; left: 150px; position: absolute; z-index: 7"
+        />
+        <h1
+          style="
+            font-family: 'Outfit', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            z-index: 70;
+          "
+        >
+          Unlimited movies, TV shows, and more
+        </h1>
+        <p
+          style="
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+          "
+        >
+          Watch anywhere. Cancel anytime.
+        </p>
+        <h3 style="margin-bottom: 20px; font-family: 'Roboto', sans-serif">
+          Ready to watch? Enter your email to create or restart your membership.
+        </h3>
+        <form action="/action_page.php" style="text-align: center">
+          <input type="email" id="email" name="email" />
+          <input type="submit" button class="button3" />
+        </form>
+      </div>
+
+      <div style="top: 20px; right: 250px; position: absolute; z-index: 9">
+        <select class="form-select" id="languages" name="languages">
+          <option value="ar">Arabic - العربية</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      <div style="top: 10px; right: 60px; position: absolute; z-index: 9">
+        <p style="top: 10px; right: 90px; position: absolute">
+          <button class="w3-button w3-red">Sign In</button>
+        </p>
+      </div>
+
+      <div
+        style="
+          background-color: #000000aa;
+          width: 100%;
+          height: 100%;
+          border-radius: 17px;
+          position: absolute;
+          z-index: 2;
+        "
+      ></div>
     </div>
-<div style="z-index: 1;">
-    <img src="https://images.ctfassets.net/y2ske730sjqp/821Wg4N9hJD8vs5FBcCGg/9eaf66123397cc61be14e40174123c40/Vector__3_.svg?w=460" width="100px" height="100px" style="top: 0px; left: 150px; position: absolute;">
-<h1 style="font-family: 'Outfit', sans-serif; display: flex; justify-content:center; align-items: center; margin-bottom: 10px; ">Unlimited movies, TV shows, and more</h1>
-<p style="font-size: 24px; text-align: center; margin-bottom: 10px; font-family: 'Roboto', sans-serif;">Watch anywhere. Cancel anytime.</p>
-<h3 style="margin-bottom: 20px; font-family: 'Roboto', sans-serif;">Ready to watch? Enter your email to create or restart your membership.</h3>
-<form action="/action_page.php" style="text-align: center;">
-    <input type="email" id="email" name="email">
-    <input type="submit" button class="button3">
-  </form>
-
-  <div style="top:20px;right: 250px; position:absolute">
-    <select class="form-select" id="languages" name="languages">
-        <!-- <option value="">Select Language</option> -->
-        <option value="ar">Arabic - العربية</option>
-        <option value="en">English</option>
-    </select>
-    </div>
-    <div style="top:10px;right: 60px; position:absolute">
-    <p style="top: 10px;right: 90px; position:absolute ;"><button class="w3-button w3-red">Sign Up</button></p>
-    </div>
-
-    <div style="background-color: 000000aa; width:100%;height: 100%; border-radius:17px; position: absolute; z-index: 2;" </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </body>
 </html>
